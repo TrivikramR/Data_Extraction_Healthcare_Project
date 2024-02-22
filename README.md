@@ -74,6 +74,7 @@ Used FastAPI for hosting the server of the project. FastApi, as name suggest is 
 ### Postman
 
 As it is a backend project, not developed frontend part. For checking how the server responds for http requests, used postman to trigger http requests and tested the outcome.
-<img src="https://github.com/TrivikramR/BI-360/blob/main/Data%20Files/performance.png" class="center">
+
+<img src="https://github.com/TrivikramR/Data_Extraction_Healthcare_Project/blob/main/backend/notebook/ocr5.png" class="center">
 
 
