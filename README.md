@@ -21,6 +21,7 @@ We're developing an automated program to extract data from images, aiming to add
 - FastApi
 
 ## Workflow
+<img src="https://github.com/TrivikramR/Data_Extraction_Healthcare_Project/blob/main/backend/notebook/ocr.png" class="center">
 
 ### PDF to Image
 For converting PDF to image, we have used pdf2image library.
@@ -28,30 +29,27 @@ For converting PDF to image, we have used pdf2image library.
 ### Without preprocessing extracting data
 Tried extracting data from source files without any processing, as they are not in proper format to be extracted, the extracted data was not as expected.
 
-<img src="https://github.com/TrivikramR/BI-360/blob/main/Data%20Files/finance%20.png" class="center">
+<img src="https://github.com/TrivikramR/Data_Extraction_Healthcare_Project/blob/main/backend/notebook/ocr6.png" class="center">
 
 ### Extracted data from the above image
-<img src="https://github.com/TrivikramR/BI-360/blob/main/Data%20Files/sales.png" class="center">
+
+<img src="https://github.com/TrivikramR/Data_Extraction_Healthcare_Project/blob/main/backend/notebook/ocr1.png" class="center">
 
 ### Image processing
 we decided to preprocess the image using opencv module, before extracting data from them. For that we have first used normal thresholding and checked, which resulted in below image
 
-<img src="https://github.com/TrivikramR/BI-360/blob/main/Data%20Files/marketing.png" class="center">
+<img src="https://github.com/TrivikramR/Data_Extraction_Healthcare_Project/blob/main/backend/notebook/ocr2.png" class="center">
 So, if there is any shadow or some noise, the normal thresholding fade out the area. which will result in loss of data.
 
 In the search of better approach of this problem, we have decided to use adaptive thresholding technique. In this technique, the image will be divided into sub image and the thresholding value will be different for all sub regions. And the end result of adaptive thresholding is much better compared to normal thresholding.
 
-<img src="https://github.com/TrivikramR/BI-360/blob/main/Data%20Files/marketing.png" class="center">
-
-## Supply chain View
-<img src="https://github.com/TrivikramR/BI-360/blob/main/Data%20Files/supply%20chain.png" class="center">
+<img src="https://github.com/TrivikramR/Data_Extraction_Healthcare_Project/blob/main/backend/notebook/ocr3.png" class="center">
 
 ### After preprocessing the image data extraction
-<img src="https://github.com/TrivikramR/BI-360/blob/main/Data%20Files/executive.png" class="center">
+<img src="https://github.com/TrivikramR/Data_Extraction_Healthcare_Project/blob/main/backend/notebook/ocr4.png" class="center">
 
 ### Notebook
 The code was written in using OOPs concepts for extracting the medical data from prescription and patient details documents.
-<img src="https://github.com/TrivikramR/BI-360/blob/main/Data%20Files/performance.png" class="center">
 
 ### OOPS design
 
